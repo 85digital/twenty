@@ -119,8 +119,7 @@ export class AgentChatSharingService {
     }
   }
 
-  // TODO(@bosiraphael): remove once 2.53 leaves the cross-upgrade window. Until
-  // the 2.53 participation command reaches a workspace, its chats have no isAssistantParticipant column
+  // TODO(@bosiraphael): remove once 2.53 leaves the cross-upgrade window
   async hasAssistantParticipation(workspaceId: string): Promise<boolean> {
     const { flatFieldMetadataMaps } =
       await this.workspaceCacheService.getOrRecompute(workspaceId, [
