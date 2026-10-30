@@ -1665,6 +1665,7 @@ export interface FormFieldConfiguration {
 
 export interface FrontComponent {
     applicationGrantedCapabilities?: Scalars['String'][]
+    applicationGrantedIframeMediaPermissions?: IframeMediaPermission[]
     applicationId: Scalars['UUID']
     applicationName?: Scalars['String']
     /** @deprecated Use generateFrontComponentApplicationTokenPair */
@@ -2001,6 +2002,7 @@ export interface MarketplaceAppDetail {
     objects?: MarketplaceAppObject[]
     pricingDescription?: Scalars['String']
     requestedCapabilities: Scalars['String'][]
+    requestedIframeMediaPermissions: IframeMediaPermission[]
     roles?: MarketplaceAppRole[]
     /** @deprecated Use galleryImages instead */
     screenshots: Scalars['String'][]
@@ -6166,6 +6168,7 @@ export interface FormFieldConfigurationGenqlSelection{
 
 export interface FrontComponentGenqlSelection{
     applicationGrantedCapabilities?: boolean | number
+    applicationGrantedIframeMediaPermissions?: IframeMediaPermissionGenqlSelection
     applicationId?: boolean | number
     applicationName?: boolean | number
     /** @deprecated Use generateFrontComponentApplicationTokenPair */
@@ -6539,6 +6542,7 @@ export interface MarketplaceAppDetailGenqlSelection{
     objects?: MarketplaceAppObjectGenqlSelection
     pricingDescription?: boolean | number
     requestedCapabilities?: boolean | number
+    requestedIframeMediaPermissions?: IframeMediaPermissionGenqlSelection
     roles?: MarketplaceAppRoleGenqlSelection
     /** @deprecated Use galleryImages instead */
     screenshots?: boolean | number

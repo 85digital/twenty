@@ -273,6 +273,7 @@ import { AddRelatedRecordPathTableFastInstanceCommand } from 'src/database/comma
 import { AddAccessTokenExpiresAtToConnectedAccountFastInstanceCommand } from 'src/database/commands/upgrade-version-command/2-54/2-54-instance-command-fast-1793357800472-add-access-token-expires-at-to-connected-account';
 import { AddWorkspaceIframeMediaPermissionsFastInstanceCommand } from 'src/database/commands/upgrade-version-command/2-55/2-55-instance-command-fast-1793371022948-add-workspace-iframe-media-permissions';
 import { RenameWorkspaceAllowedIframeOriginsToAllowedEmbeddingOriginsFastInstanceCommand } from 'src/database/commands/upgrade-version-command/2-55/2-55-instance-command-fast-1793371022971-rename-workspace-allowed-iframe-origins-to-allowed-embedding-origins';
+import { AddApplicationGrantedIframeMediaPermissionsFastInstanceCommand } from 'src/database/commands/upgrade-version-command/2-55/2-55-instance-command-fast-1793371022994-add-application-granted-iframe-media-permissions';
 
 export const INSTANCE_COMMANDS = [
   AddViewFieldGroupIdIndexOnViewFieldFastInstanceCommand,
@@ -548,4 +549,5 @@ export const INSTANCE_COMMANDS = [
   AddAccessTokenExpiresAtToConnectedAccountFastInstanceCommand,
   AddWorkspaceIframeMediaPermissionsFastInstanceCommand,
   RenameWorkspaceAllowedIframeOriginsToAllowedEmbeddingOriginsFastInstanceCommand,
+  AddApplicationGrantedIframeMediaPermissionsFastInstanceCommand,
 ];
